@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block body_block %}
+{% for product in object_list %}
+
+    <div class="container-md">
+            <div class="card-wrapper row">
+
+                <div class="card mb-3">
+                    <div class="row">
+                        <div class="card-text col-md-6">
+                            <div class="card-body">
+                              <h5 class="card-title"><b>{{ product.name }}</b></h5>
+                                <p class="card-text"><b>Сорт:</b>  <span class="sort variable">{{ product.sort }}</span></p>
+                                <p class="card-text"><b>Колір:</b> <span class="color variable">{{ product.color }}</span></p>
+                                <p class="card-text"><b>Опис:</b> <span class="discribtion variable">{{ product.text }}</span></p>
+                                <p class="card-text"><small class="product-code text-muted variable">{{ product.code }}</small></p>
+                                <div class="card-last-line">
+                                    <p class="card-text"><span class="price variable">{{ product.price }}</span> грн/шт</p>
+                                    <figure style="font-size:25px">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-image-wrapper col-md-6">
+                          <img class="card-image"  src="/media/{{ product.mainimage }}" alt="photo">
+                        </div>
+                    </div>
+                </div>
+           </div>
+    </div>
+
+     {% endfor %}
+{% endblock %}

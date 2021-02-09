@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title_block %} LOGIN {% endblock %}
+{% block body_block %}
+<h2>LOGIN USER</h2>
+<form method="POST">
+    {{ form|crispy }}
+    {%  csrf_token %}
+
+<button type="submit" class="btn btn-success btn-sm">LOGIN</button>
+</form>
+<br>
+<p>Does not have an account? <a href="{% url 'App_login:signup' %}">Create account</a></p>
+
+{% endblock %}
