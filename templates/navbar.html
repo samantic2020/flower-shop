@@ -1,29 +1,60 @@
-<figure class="logo col-lg-2 col">
-                    <a href="./App_shop/product.html">
-                        <img class="logo-image" src="../assets/admin/img/logo.png" alt="logo">
-                    </a>
-</figure>
+            <div class="row header-content-wrapper">
 
-<nav class="navbar navbar-expand-lg col-xl-8 col-lg-8 col-md-7">
+                <!--logo-->
+                <figure class="logo col-lg-2 col">
+                    <a href="App_shop/product.html">
+                        <img class="logo-image" src="/static/img/logo.png" alt="logo">
+                    </a>
+                </figure>
+
+                 <!--dropdowm menu-->
+                <nav class="navbar navbar-expand-lg col-xl-8 col-lg-8 col-md-7">
                     <div class="container">
 
                         <ul class="navbar-nav">
                           <li class="nav-item dropdown navbar-brand">
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <img src="/assets/admin/img/menu-icon.png" alt="menu">
+                              <img src="/static/img/menu-icon.png" alt="menu">
                             </a>
                             <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="./App_shop/product.html">Квіти</a></li>
-                              <li><a class="dropdown-item" href="./App_shop/product.html">Букети</a></li>
-                              <li><a class="dropdown-item" href="./App_shop/product.html">Послуги флориста</a></li>
-                              <li><a class="dropdown-item" href="./App_shop/product.html">Кімнатні рослини</a></li>
+                              <li><a class="dropdown-item" href="App_shop/product.html">Квіти</a></li>
+                              <li><a class="dropdown-item" href="./product.html">Букети</a></li>
+                              <li><a class="dropdown-item" href="./product.html">Послуги флориста</a></li>
+                              <li><a class="dropdown-item" href="./product.html">Кімнатні рослини</a></li>
                             </ul>
                           </li>
-                          <li class="nav-item"><a href="./App_shop/product.html" class="navbar-brand">Головна</a></li>
-                          <li class="nav-item"><a href="./App_shop/product.html" class="navbar-brand">Наші магазини</a></li>
-                          <li class="nav-item"><a href="./App_shop/product.html" class="navbar-brand">Доставка і оплата</a></li>
+                          <li class="nav-item"><a href="./home.html#home" class="navbar-brand">Головна</a></li>
+                          <li class="nav-item"><a href="./index.html#shops" class="navbar-brand">Наші магазини</a></li>
+                          <li class="nav-item"><a href="./index.html#info" class="navbar-brand">Доставка і оплата</a></li>
                         </ul>
 
                     </div> <!--div.conteiner-->
                 </nav>
 
+                <div class="icons-container col-lg-1">
+
+                    <!--search-->
+                    <div class="search-wrapper">
+                        <button class="btn" type="button">
+                            <img class="icons" src="static/img/search_icon.png" alt="search">
+                        </button>
+                        <input hidden class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    </div>
+
+                    <!--shopping bag-->
+                    <div class="shopping-bag-wrapper">
+                        <button class="btn" type="button">
+                            <img class="icons" src="static/img/shopping-bag-icon.png" alt="shopping bag">
+                        </button>
+                        <span class="counter">0</span>
+                        <div class="cart-window hidden" >
+                            <ul class="cart-list">
+                                <li class="cart-list-item">item + count</li>
+                            </ul>
+                            <button class="cart-list-btn" type="button">Оформити замовлення</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
